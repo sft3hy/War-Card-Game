@@ -6,6 +6,7 @@ import Card from "react-bootstrap/Card";
 const Cards = (props) => {
     const { } = props;
 
+    //array of all the cards in a deck
     const Cards = [
         "2D", "3D", "4D", "5D", "6D", "7D", "8D", "9D", "10D", "JD", "QD", "KD", "AD",
         "2S", "3S", "4S", "5S", "6S", "7S", "8S", "9S", "10S", "JS", "QS", "KS", "AS",
@@ -33,6 +34,7 @@ const Cards = (props) => {
     }
 
     const shuffledCards = shuffle(Cards);
+    //tried to do this in a while loop but took too long
     const playersCards = [
         shuffledCards[0], shuffledCards[2], shuffledCards[4], shuffledCards[6],
         shuffledCards[8], shuffledCards[10], shuffledCards[12], shuffledCards[14],
@@ -52,7 +54,6 @@ const Cards = (props) => {
         shuffledCards[41], shuffledCards[43], shuffledCards[45], shuffledCards[47],
         shuffledCards[49], shuffledCards[51]
     ];
-
 
 
     var i = 0;
